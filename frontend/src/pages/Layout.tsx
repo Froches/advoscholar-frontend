@@ -1,5 +1,6 @@
 import SideNav from "@/components/SideNav";
-// import {AdminTable, AcademicTable, ClassTable, InvoiceTable} from "@/components/Table";
+import {AdminTable, AcademicTable, ClassTable, InvoiceTable} from "@/components/Table";
+import Search from "@/components/Search";
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -10,10 +11,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
       {/* <Table/> */}
       <div className="flex-grow p-6 md:overflow-y-auto md:p-12">{children}
-      {/* <AdminTable/>
+      <Search/>
+      <AdminTable/>
       <AcademicTable/>
       <ClassTable/>
-      <InvoiceTable/> */}
+      <InvoiceTable/>
       </div>
     </div>
   );
